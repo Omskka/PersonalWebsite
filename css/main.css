@@ -3172,7 +3172,7 @@ footer .copyright span:last-child::after {
 }
 
 /* Media query to hide the container on smaller screens */
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
 
 	/* Adjust the max-width value as needed */
 	.app-image-container {
