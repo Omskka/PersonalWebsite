@@ -3165,8 +3165,7 @@ footer .copyright span:last-child::after {
 }
 
 .app-image-container {
-	display: block;
-	/* Default display */
+	display: contents;
 	margin-top: 0px;
 	padding: 0;
 }
