@@ -1,0 +1,16 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "<h1>This is my personal website</h1> you can access it through <a href=\"https://www.omermuratkirca.com\">www.omermuratkirca.com</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
