@@ -32,14 +32,21 @@
 
 	<!-- favicons
 	================================================== -->
-	<link rel="icon" type="image/png"
-		href="/Users/omskka/Desktop/PersonalWebsite/images/favicon/favicon.png/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml"
-		href="/Users/omskka/Desktop/PersonalWebsite/images/favicon/favicon.png/favicon.svg" />
-	<link rel="shortcut icon" href="/Users/omskka/Desktop/PersonalWebsite/images/favicon/favicon.png/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180"
-		href="/Users/omskka/Desktop/PersonalWebsite/images/favicon/favicon.png/apple-touch-icon.png" />
-	<link rel="manifest" href="/Users/omskka/Desktop/PersonalWebsite/images/favicon/favicon.png/site.webmanifest" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="/images/favicon/site.webmanifest" />
+
+	<!-- MailJS
+   ================================================== -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init({
+				publicKey: "9Em125dK3ZC3gx-mB",
+			});
+		})();
+	</script>
 
 </head>
 
@@ -499,9 +506,7 @@
 		</div> <!-- /section-intro -->
 
 		<div class="row contact-form">
-
 			<div class="col-twelve">
-
 				<!-- form -->
 				<form name="contactForm" id="contactForm" method="post" action="">
 					<fieldset>
@@ -522,8 +527,9 @@
 								cols="50" required=""></textarea>
 						</div>
 						<div class="form-field">
-							<button class="submitform">Submit</button>
-							<div id="submit-loader">
+							<button type="button" class="submitform" onclick="sendMail()">Submit</button>
+
+							<div id="submit-loader" style="display: none;">
 								<div class="text-loader">Sending...</div>
 								<div class="s-loader">
 									<div class="bounce1"></div>
@@ -532,7 +538,6 @@
 								</div>
 							</div>
 						</div>
-
 					</fieldset>
 				</form> <!-- Form End -->
 
